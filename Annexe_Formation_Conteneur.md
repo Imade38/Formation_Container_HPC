@@ -71,17 +71,17 @@ Option :
 
 Options courantes :
 
-\--bind <source>:<destination> : Monte un répertoire ou un fichier de l’hôte dans le conteneur.
+\--bind [source]:[destination] : Monte un répertoire ou un fichier de l’hôte dans le conteneur.
 
 \--cleanenv : Ignore les variables d’environnement de l’hôte et utilise uniquement celles définies dans le conteneur.
 
-\--home <chemin> : Définit le répertoire personnel ($HOME) dans le conteneur. Par défaut, le répertoire personnel de l’hôte est monté.
+\--home [chemin] : Définit le répertoire personnel ($HOME) dans le conteneur. Par défaut, le répertoire personnel de l’hôte est monté.
 
 \--writable-tmpfs : Active un système de fichiers temporaire en mode écriture, permettant de modifier temporairement le conteneur sans changer l’image en elle-même.
 
-\--no-mount <type> : Désactive le montage de certains répertoires par défaut (comme /proc, /dev, etc.). Cela permet un contrôle fin sur ce qui est monté.
+\--no-mount [type] : Désactive le montage de certains répertoires par défaut (comme /proc, /dev, etc.). Cela permet un contrôle fin sur ce qui est monté.
 
-\--pwd <chemin> : Spécifie le répertoire de travail par défaut dans le conteneur.
+\--pwd [chemin] : Spécifie le répertoire de travail par défaut dans le conteneur.
 
 \--nv : Active la prise en charge des GPU NVIDIA dans le conteneur (si disponible).
 
