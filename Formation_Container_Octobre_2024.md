@@ -129,7 +129,7 @@ Maintenant que nous avons déployé des conteneurs plutôt simplistes, il serait
 - La variable d'environnement APACHE_RUN_USER doit être définie sur www-data."  
 
 
-Les réponses sont disponibles dans le fichier reponse_exo.txt
+Les réponses sont disponibles dans le fichier /projects/m24084-students/test_formation/reponse_exo.txt
 
 
 ## Container avec CPU vs GPU
