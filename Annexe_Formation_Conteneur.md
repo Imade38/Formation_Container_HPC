@@ -119,7 +119,6 @@ Option courante :
 
 
 
-
 ## Instructions couramment utilisées dans un fichier Dockerfile
 
 FROM: Cette instruction spécifie l'image de base à utiliser pour construire la nouvelle image. Par exemple, FROM ubuntu:latest indique que l'image est basée sur la dernière version de Ubuntu.
