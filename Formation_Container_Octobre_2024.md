@@ -159,7 +159,7 @@ Récupérez le numero de port (après hostname:) et le token (après token=). Da
 
 Maintenant entrez la commande ci-dessous sur votre machine personnelle pour créer un tunnel SSH qui va vous permettre de récupérer les données sur le supercalculateur et ainsi afficher l'interface web de jupyter.
 
-    ssh -L YYYY:julietX:XXXX m24084-stud**juliet.mesonet.fr #Remplacez XXXX par le port chosi pour lancer le container et YYYY par le port que vous voulez libre sur votre propre machine, julietX correspond au noeud de calcul sur lequel vous avez lancé votre conteneur. ** correspond au numéro de votre nom b'utilisateur.
+    ssh -L YYYY:julietX:XXXX m24084-stud**@juliet.mesonet.fr #Remplacez XXXX par le port chosi pour lancer le container et YYYY par le port que vous voulez libre sur votre propre machine, julietX correspond au noeud de calcul sur lequel vous avez lancé votre conteneur. ** correspond au numéro de votre nom b'utilisateur.
 
 Ensuite allez sur un navigateur web et entrez l'URL localhost:YYYY. Récupérer le token généré par jupyter (affiché sur le terminal) et entrez-le dans l'interface web de Jupyter.   
 Bravo, vous êtes enfin sur JupyterLab. Ouvrez le fichier notebook "basic_gpu_cpu_benchmark.ipynb". Suivez les instructions du notebook.
