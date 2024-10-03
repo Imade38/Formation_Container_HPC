@@ -169,7 +169,7 @@ Bravo, vous êtes enfin sur JupyterLab. Ouvrez le fichier notebook "basic_gpu_cp
 
 Cette fois on utilise apptainer (ex singularity) pour lancer une sorte de Hello World en multi-noeud grâce à MPI.
 
-    srun --account=m24084-students -N 2 --ntasks-per-node=4 --mpi=pmi2 --time=01:00:00 apptainer exec --nv $HOME/test_formation/multinode3.sif /opt/mpitest
+    srun --account=m24084-students --reservation=formation -N 2 --ntasks-per-node=4 --mpi=pmi2 --time=01:00:00 apptainer exec --nv $HOME/test_formation/multinode3.sif /opt/mpitest
 
 Ici on lance un simple Hello World qui sera diffusé par chaque processus du job, on voit dans les options que le job est lancé sur 2 noeuds (-N 2) avec 4 processus en parallèle sur ces 2 noeuds (--ntasks-per-node=4) pour un total de 8 processus. C'est une manière de montrer que le multi-noeud est fonctionnel via MPI. Dans ce cas-là on utilise pmi2 une interface MPI installée directement avec Slurm pour gérer les processus MPI
 
